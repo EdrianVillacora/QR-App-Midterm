@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Villacora Attendance",
+    "slug": "villacora-attendance",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "scheme": "qrattendance",
+    "android": {
+      "package": "com.villacora.qrattendance",
+      "adaptiveIcon": {
+        "backgroundColor": "#1559C6"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.villacora.qrattendance",
+      "supportsTablet": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow QR Attendance to scan attendance QR codes.",
+          "recordAudioAndroid": false,
+          "barcodeScannerEnabled": true
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1559C6",
+          "imageWidth": 120
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
